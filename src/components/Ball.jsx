@@ -1,5 +1,7 @@
 import React, { useState, useReducer } from 'react'
 
+//all the changes that are possible to the current state
+
 function reducer(state, action) {
     switch (action.type) {
 
@@ -8,10 +10,12 @@ function reducer(state, action) {
 
         case "decrement":
             return state - 1;
+            default:
+                console.log("wrong type")
     }
 
 }
-function Ball() {
+ function Ball() {
     // let [balls, setBalls] = useState(10);
     // const increment = () => {
     //     setBalls(balls + 1);
@@ -21,8 +25,7 @@ function Ball() {
     // }
 
     //useReducer Hook
-    const [balls, dispatch] = useReducer(reducer, 10);
-
+      const [balls, dispatch] = useReducer(reducer, 10);
     return (
         <>
             <h1>Balls</h1>
@@ -31,6 +34,7 @@ function Ball() {
             <button onClick={dispatch({ type: "decrement" })}>-</button>
         </>
     )
-}
+
+ }
 
 export default Ball
