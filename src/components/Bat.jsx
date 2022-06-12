@@ -9,7 +9,7 @@ function Bat() {
         setTochangeBat("");
     }
     const buyBat = () => {
-        setBat(bat + tosell);
+        setBat(bat + Number(tosell));
         setTochangeBat("");
     }
 

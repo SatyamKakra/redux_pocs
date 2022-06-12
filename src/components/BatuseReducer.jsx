@@ -53,7 +53,7 @@ function BatuseReducer() {
 
       <button onClick={() => {
         dispatch({ type: "buy_bat" })
-      }}>Sell</button>
+      }}>Buy</button>
     </>
   )
 }
