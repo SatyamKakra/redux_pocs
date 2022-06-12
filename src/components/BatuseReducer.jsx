@@ -6,6 +6,12 @@ let initiakState = {
 function reducer(state, action) {
   switch (action.type) {
     case "sell_bat":
+      if (state.bat - state.value < 0){
+        return {
+          ...state,
+          value: ""
+        }
+      }
       return{
         bat: state.bat - state.value,
         value: ""
