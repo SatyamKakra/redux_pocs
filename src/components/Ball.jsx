@@ -17,9 +17,11 @@ function reducer(state, action) {
 }
  function Ball() {
     // let [balls, setBalls] = useState(10);
-    // const increment = () => {
-    //     setBalls(balls + 1);
-    // }
+    //  const increment = () => {
+    //    setBalls((balls) => {
+    //             balls + 1
+    // });
+  
     // const decrement = () => {
     //     setBalls(balls - 1);
     // }
@@ -30,8 +32,8 @@ function reducer(state, action) {
         <>
             <h1>Balls</h1>
             <h2>NO of Balls: {balls}</h2>
-            <button onClick={dispatch({ type: "increment" })}>+</button>
-            <button onClick={dispatch({ type: "decrement" })}>-</button>
+            <button onClick={() => {dispatch({ type: "increment" })}}>+</button>
+            <button onClick={() => {dispatch({ type: "decrement" })}}>-</button>
         </>
     )
 
