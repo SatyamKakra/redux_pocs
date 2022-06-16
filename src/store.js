@@ -3,7 +3,6 @@ import { createStore } from "redux";
 import ballReducer from "./redux/ballReducer"
 // import thunk from "redux-thunk";
 // import rootReducer from "./redux/rootReducer";
-// import ballReducer from "./redux/ballReducer";
 // import batReducer from "./redux/batReducer";
 // useReducer
 const store = createStore(ballReducer);

@@ -16,7 +16,7 @@ function App() {
     // </>
     <>
     <Provider store={store}>
-      <Ball></Ball>
+     <Ball></Ball>
     </Provider>
     </>
     
