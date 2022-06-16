@@ -1,19 +1,23 @@
-let initiakState = 10;
+let initialState = {
+    balls: 10
+}
 
 // when state is not passed -> initial state -> 10
 
-function ballReducer(state = initiakState, action) {
+function ballReducer(state = initialState, action) {
     switch (action.type) {
 
         case "increment":
-            return state + 1;
+            return {
+                balls: state.balls + 1};
 
         case "decrement":
-            return state - 1;
-            default:
-               return state;
+            return {
+                balls: state.balls - 1};
+        default:
+            return state;
     }
 
 }
 
-export default reducer;
+export default ballReducer;

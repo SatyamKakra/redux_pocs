@@ -4,7 +4,7 @@ import './App.css';
 // import Bat from './components/SimpleReact/Bat';
 // import BatuseReducer from './components/SimpleReact/BatuseReducer';
 import Ball from './components/Ball';
-import {provider} from "react-redux";
+import { Provider } from "react-redux";
 import store from "./store";
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
     // <BatuseReducer></BatuseReducer>
     // </>
     <>
-    <provider store={store}>
+    <Provider store={store}>
       <Ball></Ball>
-    </provider>
+    </Provider>
     </>
     
   );
