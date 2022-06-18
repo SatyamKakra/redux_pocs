@@ -1,26 +1,23 @@
-
 import './App.css';
-// import Ball from './components/SimpleReact/Ball';
-// import Bat from './components/SimpleReact/Bat';
-// import BatuseReducer from './components/SimpleReact/BatuseReducer';
-import Ball from './components/Ball';
+import Ball from "./components/Ball";
+import BatuseReducer from "./components/simpleReact/BatuseReducer";
+import Bat from "./components/Bat";
 import { Provider } from "react-redux";
 import store from "./store";
-
+import User from "./components/User";
+// import User from './components/simpleReact/User';
 function App() {
   return (
-    // <>
-    // <Ball></Ball>
-    // <Bat></Bat>
-    // <BatuseReducer></BatuseReducer>
-    // </>
     <>
-    <Provider store={store}>
-     <Ball></Ball>
-    </Provider>
+      {/* <BatuseReducer></BatuseReducer> */}
+      <Provider store={store}>
+        <Ball></Ball>
+        <Bat></Bat>
+        <User></User>
+      </Provider>
+      {/* <User></User> */}
     </>
-    
+
   );
 }
-
 export default App;

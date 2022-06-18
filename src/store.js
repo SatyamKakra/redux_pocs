@@ -1,9 +1,10 @@
 // npm i redux react-redux
-import { createStore } from "redux";
-import ballReducer from "./redux/ballReducer"
-// import thunk from "redux-thunk";
-// import rootReducer from "./redux/rootReducer";
+import { createStore ,applyMiddleware} from "redux";
+// npm i redux-thunbk
+import thunk from "redux-thunk";
+import rootReducer from "./redux/rootReducer";
+// import ballReducer from "./redux/ballReducer";
 // import batReducer from "./redux/batReducer";
 // useReducer
-const store = createStore(ballReducer);
+const store = createStore(rootReducer,applyMiddleware(thunk));
 export default store;
