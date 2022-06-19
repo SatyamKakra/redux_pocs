@@ -1,6 +1,6 @@
 // npm i redux react-redux
 import { createStore ,applyMiddleware} from "redux";
-// npm i redux-thunbk
+// npm i redux-thunk
 import thunk from "redux-thunk";
 import rootReducer from "./redux/rootReducer";
 // import ballReducer from "./redux/ballReducer";
